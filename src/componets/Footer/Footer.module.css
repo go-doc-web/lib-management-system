@@ -1,0 +1,29 @@
+.footerContainer {
+  padding: 30px;
+  height: 100px;
+  background-color: #faf6f6;
+}
+
+.gitHubLink,
+.copyLink {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.gitHubLink a,
+.copyLink a {
+  color: #000000;
+}
+
+.gitHubIcon {
+  width: 22px;
+  height: 22px;
+}
+
+.copyIcon {
+  width: 18px;
+  height: 18px;
+}
