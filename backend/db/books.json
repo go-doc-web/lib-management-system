@@ -1,20 +1,92 @@
 [
   {
-    "isbn": "978-3-16-148410-0",
-    "title": "Harry Potter and the Philosopher's Stone",
-    "author": "J.K. Rowling",
+    "isbn": "978-0-06-112008-4",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
     "isBorrowed": false
   },
   {
-    "isbn": "978-1-56619-909-4",
-    "title": "The Hobbit",
-    "author": "J.R.R. Tolkien",
+    "isbn": "978-0-7432-7356-5",
+    "title": "The Road",
+    "author": "Cormac McCarthy",
     "isBorrowed": true
   },
   {
-    "isbn": "978-5-59-791011-6",
-    "title": "StoneBody",
-    "author": "Maugli",
+    "isbn": "978-0-452-28423-4",
+    "title": "1984",
+    "author": "George Orwell",
     "isBorrowed": false
+  },
+  {
+    "isbn": "978-1-250-08300-8",
+    "title": "The Silent Patient",
+    "author": "Alex Michaelides",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-670-81302-2",
+    "title": "The Goldfinch",
+    "author": "Donna Tartt",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-0-452-28706-6",
+    "title": "Fahrenheit 451",
+    "author": "Ray Bradbury",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-1-250-14080-5",
+    "title": "Where the Crawdads Sing",
+    "author": "Delia Owens",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-1-4767-4425-3",
+    "title": "The Night Circus",
+    "author": "Erin Morgenstern",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-375-42271-2",
+    "title": "The Immortalists",
+    "author": "Chloe Benjamin",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-0-375-42097-7",
+    "title": "Little Fires Everywhere",
+    "author": "Celeste Ng",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-307-34150-0",
+    "title": "Big Little Lies",
+    "author": "Liane Moriarty",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-0-451-23124-7",
+    "title": "Nine Perfect Strangers",
+    "author": "Liane Moriarty",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-618-00221-8",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-06-020079-0",
+    "title": "The Help",
+    "author": "Kathryn Stockett",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-1-250-03955-6",
+    "title": "The Women Who Raised Me",
+    "author": "Kathryn Stockett",
+    "isBorrowed": true
   }
 ]
