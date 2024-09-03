@@ -1,0 +1,19 @@
+.listItem {
+  padding: 8px 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  margin-top: 8px;
+}
+
+.linkItem {
+  /* display: flex;
+  flex-direction: column; */
+  color: inherit;
+  text-decoration: none;
+}
+
+.listItem a {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}

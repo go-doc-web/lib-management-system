@@ -1,0 +1,23 @@
+.root {
+  padding-top: 20px;
+  padding-bottom: 20px;
+}
+
+.title {
+  margin-bottom: 10px;
+}
+
+.loadingBlock {
+  height: 50vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.loadingBlock {
+  font-size: 22px;
+}
+
+.error {
+  font-size: 18px;
+  color: tomato;
+}
