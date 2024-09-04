@@ -1,15 +1,17 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 import { Report } from 'notiflix/build/notiflix-report-aio';
 import clsx from 'clsx';
-import Input from '../ui/Input/Input';
-import styles from './AddBookForm.module.css';
-import { useModal } from '../../context/ModalContext';
 import { AppContext } from '../../context/AppContext';
+import Input from '../ui/Input/Input';
+
+import { useModal } from '../../context/ModalContext';
 import Title from '../Title';
 
-import { addBook } from '../../api/books-api';
+import { updateBook } from '../../api/books-api';
+import styles from './EditBookform.module.css';
 
-const AddBookForm = () => {
+const EditBookForm = ({ isbn }) => {
   const { books, setBooks } = React.useContext(AppContext);
 
   const { closeModal } = useModal();
@@ -23,6 +25,17 @@ const AddBookForm = () => {
     title: null,
     author: null,
   });
+
+  React.useEffect(() => {
+    const book = books.find(book => book.isbn === isbn);
+    if (book) {
+      setFormData({
+        title: book.title,
+        author: book.author,
+        isBorrowed: book.isBorrowed,
+      });
+    }
+  }, [isbn, books]);
 
   const handleInputChange = e => {
     const { name, value } = e.target;
@@ -87,11 +100,11 @@ const AddBookForm = () => {
 
       if (hasError) return;
 
-      const data = await addBook(formData);
+      const data = await updateBook(isbn, formData);
 
+      setBooks([...data]);
       closeModal();
-      setBooks(prevData => [...prevData, data]);
-      Report.success('Відмінно', 'Книжку додано успішно!', 'Oк!');
+      Report.success('Відмінно', 'Змінено успішно!', 'Oк!');
 
       setFormData({ title: '', author: '', isBorrowed: false });
       setError({ title: null, author: null });
@@ -103,7 +116,7 @@ const AddBookForm = () => {
 
   return (
     <div className={clsx('container', styles.root)}>
-      <Title className={styles.title} type="h2" text="Додати книгу" />
+      <Title className={styles.title} type="h2" text="Змінити книгу" />
       <form onSubmit={handleSubmit} className={styles.form}>
         <Input
           id="title"
@@ -138,10 +151,25 @@ const AddBookForm = () => {
           label="Відзначити книгу як позичену"
           onChange={handleCheckboxChange}
         />
-        <button className={styles.submit}>Додати</button>
+        <div className={styles.wrapperBtn}>
+          <button type="submit" className={styles.submit}>
+            Змінити
+          </button>
+          <button
+            onClick={closeModal}
+            className={clsx(styles.submit, styles.exitBtn)}
+            type="button"
+          >
+            Скасувати
+          </button>
+        </div>
       </form>
     </div>
   );
 };
 
-export default AddBookForm;
+EditBookForm.propTypes = {
+  isbn: PropTypes.string.isRequired,
+};
+
+export default EditBookForm;

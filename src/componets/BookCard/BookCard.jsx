@@ -4,6 +4,9 @@ import { useParams } from 'react-router-dom';
 import placeholderImg from '../../assets/No-Image-Placeholder.svg_.png';
 import { getBookByIsbn } from '../../api/books-api';
 import Title from '../Title';
+import BorrowedBook from '../../componets/BorrowedBook';
+import EditBookButton from '../../componets/EditBookButton';
+import DeleteBookButton from '../../componets/DeleteBookButton';
 
 import styles from './BookCard.module.css';
 
@@ -39,6 +42,16 @@ const BookCard = () => {
             <div className={styles.author}>
               <span>Author : </span>
               <span>{book.author}</span>
+            </div>
+            <p>TODO : Не встиг доробити!!!</p>
+            <div className={styles.blockBtn}>
+              <BorrowedBook
+                className={styles.btn}
+                isBorrowed={book.isBorrowed}
+                isbn={isbn}
+              />
+              <EditBookButton className={styles.btn} isbn={isbn} />
+              <DeleteBookButton className={styles.btn} isbn={isbn} />
             </div>
           </div>
         </div>

@@ -22,3 +22,19 @@ export const addBook = async formData => {
   const { data } = await api.post('/', formData);
   return data;
 };
+export const updateBook = async (isbn, formData) => {
+  const { data } = await api.put(`${isbn}`, formData);
+
+  return data;
+};
+
+export const deleteByIsbn = async isbn => {
+  const { data } = await api.delete(`${isbn}`);
+
+  return data;
+};
+export const markAsBorrowed = async isbn => {
+  const { data } = await api.patch(`${isbn}/borrow`);
+
+  return data;
+};

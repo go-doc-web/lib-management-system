@@ -33,3 +33,13 @@
 .author {
   font-size: 30px;
 }
+
+.blockBtn {
+  display: flex;
+  gap: 10px;
+}
+
+.btn {
+  display: block;
+  width: 150px;
+}

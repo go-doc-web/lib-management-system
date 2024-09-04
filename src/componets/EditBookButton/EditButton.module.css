@@ -1,0 +1,23 @@
+.addBtn {
+  min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: green;
+  color: #fff;
+  padding: 8px 18px;
+  font-size: 1rem;
+  font-weight: 500;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.addBtn:hover {
+  background: rgb(40, 80, 40);
+}
+
+.addBtn:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}

@@ -1,19 +1,27 @@
 .listItem {
+  width: 90%;
   padding: 8px 12px;
   border: 1px solid #ccc;
   border-radius: 8px;
   margin-top: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
 }
 
 .linkItem {
-  /* display: flex;
-  flex-direction: column; */
   color: inherit;
   text-decoration: none;
 }
 
-.listItem a {
+.infoBook {
   display: flex;
-  align-items: baseline;
+
+  gap: 10px;
+}
+
+.btnBlock {
+  display: flex;
+
   gap: 10px;
 }
