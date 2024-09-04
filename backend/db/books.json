@@ -66,27 +66,75 @@
     "isBorrowed": false
   },
   {
-    "isbn": "978-0-86-430858-2",
-    "title": "asasasasasas",
-    "author": "asasasasasasas",
-    "isBorrowed": false
-  },
-  {
-    "isbn": "978-1-61-299014-8",
-    "title": "aaaaaaaaaaaaaaaaaaa",
-    "author": "sssssssssssssssssss",
-    "isBorrowed": false
-  },
-  {
     "isbn": "978-3-45-250036-6",
     "title": "Star Wars",
     "author": "Lucas",
     "isBorrowed": false
   },
   {
-    "isbn": "978-1-04-448162-2",
-    "title": "sdsdsd",
-    "author": "sdsdsds",
+    "isbn": "978-0-14-044913-6",
+    "title": "The Odyssey",
+    "author": "Homer",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-7432-7356-5",
+    "title": "Angels & Demons",
+    "author": "Dan Brown",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-1-56619-909-4",
+    "title": "The Great Gatsby",
+    "author": "F. Scott Fitzgerald",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-0-451-52896-0",
+    "title": "1984",
+    "author": "George Orwell",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-375-70497-7",
+    "title": "The Road",
+    "author": "Cormac McCarthy",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-0-14-243723-0",
+    "title": "Moby-Dick",
+    "author": "Herman Melville",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-316-76948-8",
+    "title": "The Catcher in the Rye",
+    "author": "J.D. Salinger",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-0-7432-7357-2",
+    "title": "The Da Vinci Code",
+    "author": "Dan Brown",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-0-399-15044-3",
+    "title": "The Old Man and The Sea",
+    "author": "Ernest Hemingway",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-0-374-15846-2",
+    "title": "To Kill a Mockingbird",
+    "author": "Harper Lee",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-1-36-393694-6",
+    "title": "DERW",
+    "author": "asasasasasasasa",
     "isBorrowed": false
   }
 ]

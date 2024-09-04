@@ -1,20 +1,28 @@
 import React from 'react';
 import { AppContext } from '../../../context/AppContext';
-import clsx from 'clsx';
 
 import BookItem from '../BookItem';
 
 import styles from './BooksList.module.css';
 
 const BooksList = () => {
-  const { books } = React.useContext(AppContext);
+  const { books, searchResults } = React.useContext(AppContext);
+
+  let result = null;
+
+  if (searchResults.length !== 0) {
+    result = searchResults;
+  }
+  if (searchResults.length === 0) {
+    result = books;
+  }
 
   return (
     <ol className={styles.list}>
-      {books?.map((book, index) => (
-        <div className={styles.wrapper}>
+      {result?.map((book, index) => (
+        <div key={book.isbn} className={styles.wrapper}>
           <span>{index + 1}</span>
-          <BookItem key={book.isbn} {...book} />
+          <BookItem {...book} />
         </div>
       ))}
     </ol>

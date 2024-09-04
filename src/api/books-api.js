@@ -38,3 +38,12 @@ export const markAsBorrowed = async isbn => {
 
   return data;
 };
+
+export const searchBooks = async query => {
+  // const encodedQuery = encodeURIComponent(query);
+  const { data } = await axios.get(`http://localhost:8000/search`, {
+    params: { query: query },
+  });
+
+  return data;
+};

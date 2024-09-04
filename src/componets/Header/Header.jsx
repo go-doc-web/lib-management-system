@@ -11,9 +11,8 @@ const Header = () => {
     <header>
       <div className={clsx('container', styles.root)}>
         <Logo />
-        <h1 className={styles.title}>Система управління бібліотекою</h1>
-        <AddBookButton />
         <SearchForm />
+        <AddBookButton />
       </div>
     </header>
   );
