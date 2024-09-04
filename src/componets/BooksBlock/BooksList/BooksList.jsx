@@ -11,8 +11,11 @@ const BooksList = () => {
 
   return (
     <ol className={styles.list}>
-      {books?.map(book => (
-        <BookItem key={book.isbn} {...book} />
+      {books?.map((book, index) => (
+        <div className={styles.wrapper}>
+          <span>{index + 1}</span>
+          <BookItem key={book.isbn} {...book} />
+        </div>
       ))}
     </ol>
   );

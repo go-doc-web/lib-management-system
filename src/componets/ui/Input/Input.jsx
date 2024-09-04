@@ -11,6 +11,7 @@ const Input = ({
   label = '',
   classNameLabel,
   classNameWrapper,
+  requiredSymbol,
   error = '',
   ...attrs
 }) => {
@@ -22,11 +23,7 @@ const Input = ({
       {label && (
         <label className={labelClasses} htmlFor={id}>
           {label}
-          {attrs.requiredSymbol ? (
-            <span className={styles.required}> *</span>
-          ) : (
-            ''
-          )}
+          {requiredSymbol ? <span className={styles.required}> *</span> : ''}
         </label>
       )}
       <input
@@ -49,6 +46,7 @@ Input.propTypes = {
   placeholder: PropTypes.string,
   classNameLabel: PropTypes.string,
   classNameWrapper: PropTypes.string,
+  requiredSymbol: PropTypes.bool,
 };
 
 export default Input;

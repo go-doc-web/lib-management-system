@@ -1,0 +1,86 @@
+.root {
+  padding: 40px;
+}
+.form {
+  margin-top: 40px;
+  max-width: 450px;
+
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.input {
+  display: block;
+  width: 100%;
+
+  height: calc(50px + 2px);
+  padding: 6px 12px;
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  color: #212529;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 1px solid #bdbdbd;
+  border-radius: 0.25rem;
+  transition: border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.input::placeholder {
+  color: #212529;
+  opacity: 0.4;
+  font-size: 16px;
+}
+
+.input:focus {
+  color: #212529;
+  background-color: #fff;
+  border-color: #bdbdbd;
+  outline: 0;
+  box-shadow: 0 0 0 0.2rem rgba(158, 158, 158, 0.25);
+}
+
+.title {
+  text-align: center;
+}
+
+.submit {
+  margin-top: 50px;
+  width: 50%;
+  min-width: 100px;
+  font-family: inherit;
+  appearance: none;
+  border: 0;
+  border-radius: 5px;
+  background: #4676d7;
+  color: #fff;
+  padding: 8px 16px;
+  font-size: 1rem;
+  cursor: pointer;
+}
+
+.submit:hover {
+  background: #1d49aa;
+}
+
+.submit:focus {
+  outline: none;
+  box-shadow: 0 0 0 4px #cbd6ee;
+}
+
+.label {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.wrapperBtn {
+  display: flex;
+  gap: 20px;
+}
+.exitBtn {
+  background: tomato;
+}
+.exitBtn:hover {
+  background: rgb(248, 86, 58);
+}
