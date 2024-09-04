@@ -11,3 +11,14 @@ export const getAllBooks = async () => {
 
   return data;
 };
+
+export const getBookByIsbn = async isbn => {
+  const { data } = await api.get(`${isbn}`);
+
+  return data;
+};
+
+export const addBook = async formData => {
+  const { data } = await api.post('/', formData);
+  return data;
+};

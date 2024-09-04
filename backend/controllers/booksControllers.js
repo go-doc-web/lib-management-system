@@ -17,6 +17,17 @@ const getAllBooks = async (req, res, next) => {
     next(err);
   }
 };
+
+const getBookByIsbn = async (req, res, next) => {
+  try {
+    const isbn = req.params.isbn;
+    const books = await readBooksFromFile();
+    const book = books.filter(book => book.isbn === isbn);
+    res.status(200).json(book[0]);
+  } catch (err) {
+    next(err);
+  }
+};
 const addBook = async (req, res, next) => {
   try {
     const { title, author, isBorrowed = false } = req.body;
@@ -126,4 +137,5 @@ module.exports = {
   deleteBook,
   searchBooks,
   markAsBorrowed,
+  getBookByIsbn,
 };

@@ -22,10 +22,15 @@ const Input = ({
       {label && (
         <label className={labelClasses} htmlFor={id}>
           {label}
-          {attrs.requared ? <span className={styles.requared}> *</span> : ''}
+          {attrs.requiredSymbol ? (
+            <span className={styles.required}> *</span>
+          ) : (
+            ''
+          )}
         </label>
       )}
       <input
+        id={id}
         name={id}
         className={classess}
         placeholder={placeholder}

@@ -1,0 +1,35 @@
+.section {
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+}
+
+.card img {
+  width: 300px;
+}
+
+.cardDescr {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.title {
+  font-size: 38px;
+}
+
+.isbn {
+  font-size: 24px;
+}
+
+.isbnColor {
+  color: green;
+}
+
+.author {
+  font-size: 30px;
+}

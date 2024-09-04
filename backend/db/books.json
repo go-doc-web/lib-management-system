@@ -88,5 +88,65 @@
     "title": "The Women Who Raised Me",
     "author": "Kathryn Stockett",
     "isBorrowed": true
+  },
+  {
+    "isbn": "978-7-86-080058-0",
+    "title": "sdsdsdsd",
+    "author": "sdsdsdsdsdsd",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-4-84-320368-8",
+    "title": "asasasasas",
+    "author": "aaaaaaa",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-8-66-304566-8",
+    "title": "aaaaa",
+    "author": "sssssss",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-6-15-694697-5",
+    "title": "zxzxzx",
+    "author": "zxzxzxzx",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-5-78-594875-9",
+    "title": "sdsdsds",
+    "author": "sdsdsdsd",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-9-23-113233-2",
+    "title": "asasasasas",
+    "author": "asasasasas",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-7-18-482360-4",
+    "title": "asasasas",
+    "author": "asasasasas",
+    "isBorrowed": true
+  },
+  {
+    "isbn": "978-2-40-009028-4",
+    "title": "asasas",
+    "author": "asasasasasasasas",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-9-81-515281-2",
+    "title": "asasas",
+    "author": "asasasas",
+    "isBorrowed": false
+  },
+  {
+    "isbn": "978-4-92-307405-2",
+    "title": "фыфыфыф",
+    "author": "фыфыфыфыфы",
+    "isBorrowed": false
   }
 ]

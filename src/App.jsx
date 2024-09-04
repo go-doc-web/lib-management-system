@@ -15,7 +15,7 @@ const App = () => {
       <main className="main">
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/:id" element={<SingleBook />}></Route>
+          <Route path="book/:isbn" element={<SingleBook />}></Route>
           <Route path="*" element={<NotFound />} />
         </Routes>
       </main>
