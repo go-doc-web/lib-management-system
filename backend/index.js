@@ -3,14 +3,16 @@ const cors = require('cors');
 require('dotenv').config();
 const app = express();
 
-const PORT = process.env.PORT || 8001;
+const PORT = process.env.PORT || 8000;
 
 const booksRouter = require('./routes/booksRoutes');
+const searchRouter = require('./routes/searchRoutes');
 
 app.use(express.json());
 app.use(cors());
 
 app.use('/api/books', booksRouter);
+app.use('/search', searchRouter);
 
 app.use((req, res) => {
   res.status(404).json({ message: 'Not found' });

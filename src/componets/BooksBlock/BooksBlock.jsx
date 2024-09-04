@@ -1,6 +1,5 @@
 import React from 'react';
 import clsx from 'clsx';
-import { Link } from 'react-router-dom';
 
 import Title from '../Title';
 import BooksList from './BooksList/BooksList';
@@ -10,8 +9,7 @@ import { getAllBooks } from '../../api/books-api';
 import styles from './BooksBlock.module.css';
 
 const BooksBlock = () => {
-  const { books, setBooks, isLoading, setIsLoading } =
-    React.useContext(AppContext);
+  const { setBooks, isLoading, setIsLoading } = React.useContext(AppContext);
   const [error, setError] = React.useState(null);
 
   React.useEffect(() => {

@@ -5,7 +5,7 @@ const {
   addBook,
   updateBook,
   deleteBook,
-  searchBooks,
+  // getSearchingBooks,
   markAsBorrowed,
   getBookByIsbn,
 } = require('../controllers/booksControllers');
@@ -15,7 +15,7 @@ router.get('/:isbn', getBookByIsbn);
 router.post('/', addBook);
 router.put('/:isbn', updateBook);
 router.delete('/:isbn', deleteBook);
-router.get('/search', searchBooks);
+// router.get('/search', getSearchingBooks);
 router.patch('/:isbn/borrow', markAsBorrowed);
 
 module.exports = router;

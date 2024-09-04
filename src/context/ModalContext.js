@@ -8,11 +8,19 @@ export const ModalProvider = ({ children }) => {
   const openModal = useCallback(content => {
     setModalContent(content);
     setIsOpen(true);
+    document.body.style.overflow = 'hidden';
   }, []);
 
   const closeModal = useCallback(() => {
     setIsOpen(false);
     setModalContent(null);
+    document.body.style.overflow = 'auto';
+  }, []);
+
+  React.useEffect(() => {
+    return () => {
+      document.body.style.overflow = 'auto';
+    };
   }, []);
   return (
     <ModalContext.Provider

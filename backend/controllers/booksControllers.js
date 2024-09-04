@@ -8,6 +8,7 @@ const {
 const getAllBooks = async (req, res, next) => {
   try {
     const books = await readBooksFromFile();
+
     if (!books || (Array.isArray(books) && books.length === 0)) {
       throw httpError(404, 'LMS is empty');
     }
@@ -103,6 +104,7 @@ const searchBooks = async (req, res, next) => {
     const query = req.query.query ? req.query.query.toLowerCase() : '';
     if (!query) {
       const err = new Error('Parametr query is required');
+      res.json({ status: 400, data: [] });
       err.status = 400;
       throw err;
     }
@@ -118,17 +120,28 @@ const searchBooks = async (req, res, next) => {
         book.title.toLowerCase().includes(query) || book.isbn.includes(query)
     );
 
-    if (result.length === 0) {
-      return res
-        .status(404)
-        .json({ message: `No found books by query ${query}` });
-    }
+    // if (result.length === 0) {
+    //   return res.status(404).json([]);
+    // }
 
     res.status(200).json(result);
   } catch (err) {
     next(err);
   }
 };
+// const searchBook = async (req, res, next) => {
+//   try {
+//     const query = req.query.query;
+//     console.log('query', query);
+//     const books = await readBooksFromFile();
+//     const result = books.filter(
+//       b => b.title.includes(query) || b.isbn.includes(query)
+//     );
+//     res.json(result || 'hello');
+//   } catch (err) {
+//     next(err); // Обработка ошибок
+//   }
+// };
 
 module.exports = {
   getAllBooks,
