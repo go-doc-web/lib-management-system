@@ -8,7 +8,7 @@ import styles from './BooksList.module.css';
 
 const BooksList = () => {
   const { books } = React.useContext(AppContext);
-  console.log('books', books);
+
   return (
     <ol className={styles.list}>
       {books?.map(book => (

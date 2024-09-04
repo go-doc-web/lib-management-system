@@ -7,9 +7,11 @@ const {
   deleteBook,
   searchBooks,
   markAsBorrowed,
+  getBookByIsbn,
 } = require('../controllers/booksControllers');
 
 router.get('/', getAllBooks);
+router.get('/:isbn', getBookByIsbn);
 router.post('/', addBook);
 router.put('/:isbn', updateBook);
 router.delete('/:isbn', deleteBook);

@@ -19,7 +19,7 @@ const BooksBlock = () => {
       setIsLoading(true);
       try {
         const data = await getAllBooks();
-        console.log('data', data);
+
         setBooks([...data]);
       } catch (error) {
         setError('Неможливо завантажити список книг. Спробуйте пізніше.');
